@@ -44,6 +44,8 @@ public class ArticleController {
     public void detail() {
         System.out.print("상세보기 할 게시물 번호를 입력해주세요 : ");
         int id = scan.nextInt();
+        Article article = new Article();
+        articleView.printArticleDetail(article);
     }
     public void search() {
         System.out.print("검색 키워드를 입력해주세요 : ");
